@@ -146,7 +146,7 @@ def main(args: Arguments):
 
     # Load dataset
     dataset = datasets.load_dataset("reddit", split="train[:500000]").train_test_split(
-        0.02, seed=args.model.seed
+        0.02, seed=args.train.seed
     )
 
     # Log on each process the small summary:
